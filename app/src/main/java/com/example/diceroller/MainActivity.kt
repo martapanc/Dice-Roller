@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.text = "Let's roll"
         rollButton.setOnClickListener {
-//            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
             rollDice()
         }
     }
@@ -24,6 +24,5 @@ class MainActivity : AppCompatActivity() {
         val resultTest: TextView = findViewById(R.id.result_text)
 
         resultTest.text = (Random().nextInt(6) + 1).toString()
-//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
